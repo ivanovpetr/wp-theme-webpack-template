@@ -1,0 +1,10 @@
+@import '__center/section__center'
+
+.section{
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+	z-index: 1;
+	position: relative;
+}

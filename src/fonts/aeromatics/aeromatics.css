@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Aeromatics';
+    src: local('Aeromatics Regular'),
+        url('./AeroMaticsRegular.woff2') format('woff2'),
+        url('./AeroMaticsRegular.woff') format('woff'),
+        url('./AeroMaticsRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aeromatics';
+    src: local('Aeromatics Italic'),
+        url('./AeroMaticsItalic.woff2') format('woff2'),
+        url('./AeroMaticsItalic.woff') format('woff'),
+        url('./AeroMaticsItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Aeromatics';
+    src: local('Aeromatics Bold'),
+        url('./AeroMaticsBold.woff2') format('woff2'),
+        url('./AeroMaticsBold.woff') format('woff'),
+        url('./AeroMaticsBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aeromatics';
+    src: local('Aeromatics Bold Italic'),
+        url('./AeroMaticsBoldItalic.woff2') format('woff2'),
+        url('./AeroMaticsBoldItalic.woff') format('woff'),
+        url('./AeroMaticsBoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Aeromatics';
+    src: local('Aeromatics Light'),
+        url('./AeroMaticsLight.woff2') format('woff2'),
+        url('./AeroMaticsLight.woff') format('woff'),
+        url('./AeroMaticsLight.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aeromatics';
+    src: local('Aeromatics Light Italic'),
+        url('./AeroMaticsLightItalic.woff2') format('woff2'),
+        url('./AeroMaticsLightItalic.woff') format('woff'),
+        url('./AeroMaticsLightItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
