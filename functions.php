@@ -8,7 +8,7 @@
 
 define('THEME_NAME','boilerplate');
 
-if (!function_exists('theme_setup')) :
+if (!function_exists('theme_setup')) {
     /**
      * Sets up theme defaults and registers support for various WordPress features.
      *
@@ -34,5 +34,23 @@ if (!function_exists('theme_setup')) :
         //Enable support for the following post formats:aside, gallery, quote, image, and video
         add_theme_support('post-formats', array('aside', 'gallery', 'quote', 'image', 'video'));
     }
-endif; // theme_setup
+}
 add_action('after_setup_theme', 'theme_setup');
+
+if(!function_exists('enqueue_theme_styles')){
+    function add_theme_scripts() {
+        wp_enqueue_style( 'style', get_stylesheet_uri() );
+
+        wp_enqueue_style( 'slider', get_template_directory_uri() . '/assets/css/bundle.css', array(), '1.0', 'all');
+
+        wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/app.js', array ( 'jquery' ), 1.0, true);
+
+        //if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+        //    wp_enqueue_script( 'comment-reply' );
+        //}
+    }
+}
+add_action('wp_enqueue_scripts', 'add_theme_scripts');
+
+//Theme Post Type Registration
+require_once( get_theme_file_path( '/include/post-types/template.php' ) );
