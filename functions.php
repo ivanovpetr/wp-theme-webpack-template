@@ -41,7 +41,7 @@ if(!function_exists('enqueue_theme_styles')){
     function add_theme_scripts() {
         wp_enqueue_style( 'style', get_stylesheet_uri() );
 
-        wp_enqueue_style( 'slider', get_template_directory_uri() . '/assets/css/bundle.css', array(), '1.0', 'all');
+        wp_enqueue_style( 'style-bundle', get_template_directory_uri() . '/assets/css/bundle.css', array(), '1.0', 'all');
 
         wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/app.js', array ( 'jquery' ), 1.0, true);
 

@@ -1,4 +1,45 @@
-//fonts
+// ------------------------------------------ //
+// Fonts importing -------------------------- //
+// ------------------------------------------ //
+
+//example
 @import "../../fonts/aeromatics/aeromatics";
-//normalize.css
+
+// ------------------------------------------ //
+// Before application styles ---------------- //
+// ------------------------------------------ //
+
+//normalize.css (reset)
 @import "node_modules/normalize.css/normalize";
+
+// ------------------------------------------ //
+// Libraries -------------------------------- //
+// ------------------------------------------ //
+
+//Bootstrap
+//@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+//html tag preset
+html{
+	height:100%;
+}
+
+//@TODO find alternate to clearfix
+//clearfix hack
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+//@TODO find alternate way with box-sizing
+//box-sizing brutal hack for convenience
+div,section,ul,li,a,input,textarea,p,h1,h2,h3,h4,h5,h6,nav{
+	box-sizing: border-box;
+}
