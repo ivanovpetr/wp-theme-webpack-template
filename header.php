@@ -1,15 +1,14 @@
 <!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <!--[if lt IE 9]>
+        <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+    <![endif]-->
+    <?php wp_head(); ?>
 </head>
-<body>
-    лил
-</body>
-<script src="js/vendor.js"></scriptsrc>
-<script src="js/bundle.js"></scriptsrc>
-</html>
+<body <?php body_class(); ?>>
+
