@@ -9,14 +9,21 @@
 // ------------------------------------------ //
 // Basic blocks ----------------------------- //
 // ------------------------------------------ //
-// @import "basic.blocks/block/index"; ------ //
+// @import "basic.blocks/block/block"; ------ //
 // ------------------------------------------ //
 
+@import "basic.blocks/body/body";
+@import "basic.blocks/hidden/hidden";
+@import "basic.blocks/wrapper/wrapper";
+@import "basic.blocks/section/section";
 
 
 // ------------------------------------------ //
 // Project blocks --------------------------- //
 // ------------------------------------------ //
-// @import "project.blocks/block/index"; ---- //
+// @import "project.blocks/block/block"; ---- //
 // ------------------------------------------ //
+
+@import "project.blocks/body/body";
+@import "project.blocks/wrapper/wrapper";
 
